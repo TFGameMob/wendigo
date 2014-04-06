@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
@@ -14,6 +13,11 @@ gem 'therubyracer'
 gem 'devise'
 gem 'decent_exposure'
 gem 'thin'
+
+group :test do
+    gem 'cucumber-rails', :require => false
+    gem 'database_cleaner'
+end
 
 group :testing, :development do
   gem 'rspec-rails'
