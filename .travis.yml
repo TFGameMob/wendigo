@@ -2,3 +2,10 @@ rvm:
   - "2.0.0"
   - "2.1.0"
   - "2.1.1"
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/3fbacf1a429bd006a59e
+    on_success: change
+    on_failure: always
+    on_start: false
